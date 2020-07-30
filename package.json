@@ -1,0 +1,32 @@
+{
+  "name": "driver-kata",
+  "version": "0.1.0",
+  "directories": {
+    "lib": "lib",
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "make:readme": "readme-md > README.md",
+    "prepublishOnly": "trevor",
+    "pretest": "eslint --fix .",
+    "test": "nyc mocha"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "meow": "^5.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.14.1",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.4",
+    "mocha": "^5.2.0",
+    "nyc": "^13.3.0",
+    "sort-package-json": "^1.19.0",
+    "trevor": "^2.4.0"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
